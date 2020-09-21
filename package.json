@@ -1,0 +1,48 @@
+{
+	"name": "express-graphql",
+	"version": "1.0.0",
+	"description": "graphql express demo for testing",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon ./src/index.js -e js,graphql,env -w .env -w src --exec babel-node",
+		"start": "NODE_ENV=production node server/"
+	},
+	"author": "Thomas",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.0",
+		"bcryptjs": "^2.4.3",
+		"connect-redis": "^5.0.0",
+		"cookie-parser": "^1.4.5",
+		"crypto": "^1.0.1",
+		"express": "^4.17.1",
+		"express-graphql": "^0.9.0",
+		"express-session": "^1.17.1",
+		"graphql": "^14.1.0",
+		"graphql-tools": "^6.0.9",
+		"ioredis": "^4.17.3",
+		"jsonwebtoken": "^8.5.1",
+		"mysql2": "^2.1.0",
+		"pino": "^6.3.2",
+		"pino-pretty": "^4.0.0",
+		"redis": "^3.0.2",
+		"sequelize": "^5.21.12"
+	},
+	"compilerOptions": {
+		"moduleResolution": "node"
+	},
+	"engines": {
+		"node": ">=12"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.10.2",
+		"@babel/node": "^7.10.1",
+		"@babel/preset-env": "^7.10.2",
+		"eslint": "^7.3.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.21.2",
+		"nodemon": "^2.0.4"
+	}
+}

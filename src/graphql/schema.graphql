@@ -1,0 +1,15 @@
+#import '../user/user.graphql'
+
+type Query {
+	getUsers(token: String): [User]
+	getUserById(id: ID!): UserMainResponse
+	userLogin(input: UserMainRequest): UserMainResponse
+	userLogout: UserMainResponse
+	me: UserMainResponse
+}
+
+type Mutation {
+	registerUser(input: UserMainRequest): UserMainResponse
+	updateUser(input: UserMainRequest): UserMainResponse
+	deleteUser(id: ID!): UserMainResponse
+}
